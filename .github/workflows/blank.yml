@@ -22,7 +22,7 @@
           uses: parasoft/parasoft-coverage-action@roller_cicd960
           # uses: jchen-parasoft/coverage-report-action@new_implement_demo
           with: 
-            report: 'coverage*.xml'
+            report: 'coverage*'
             # report: '**'
             # report: 'report-xunit_converted-from-xml-report.xml'
              
