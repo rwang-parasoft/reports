@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Coverage ver="2" toolVer="2024.1.1" execEnv="win32_x86_64" hasViols="false" project="" buildId="2025-01-08" climode="true" toolDispName="Jtest" prjModule="com.example:module-a, ..." toolId="jtest" machine="CD-RWANG" tag="${scontrol_branch}-win32_x86_64" time="2025-01-08T11:21:11+08:00" id="1737717978010" lang="en_US" user="rwang" toolName="DTP Engine for Java">
+	<TestConfig machine="CD-RWANG" pseudoUrl="builtin://Unit Tests" name="Unit Tests" user="rwang"/>
+	<VersionInfos>
+		<VersionInfo id="LC" ver="1"/>
+	</VersionInfos>
+	<Repositories/>
+	<Locations>
+		<Loc locRef="1" projId="com.example:module-a" covId="877845591" sym="com.example.AppA:877845591" project="com.example:module-a" binHash="2241705324" resProjPath="src/main/java/com/example/AppA.java" uri="file:/C:/Users/Mrwan/Desktop/multiple-modules-maven/multi-module-parent/module-a/src/main/java/com/example/AppA.java" projPath="/com.example:module-a" hash="-1689539981"/>
+		<Loc locRef="2" projId="com.example:module-b" covId="-1929893556" sym="com.example.AppB:-1929893556" project="com.example:module-b" binHash="964295059" resProjPath="src/main/java/com/example/AppB.java" uri="file:/C:/Users/Mrwan/Desktop/multiple-modules-maven/multi-module-parent/module-b/src/main/java/com/example/AppB.java" projPath="/com.example:module-b" hash="2086135028"/>
+		<Loc locRef="3" projId="com.example:module-a" covId="355859125" sym="com.example.ClassA:355859125" project="com.example:module-a" binHash="26385897" resProjPath="src/main/java/com/example/ClassA.java" uri="file:/C:/Users/Mrwan/Desktop/multiple-modules-maven/multi-module-parent/module-a/src/main/java/com/example/ClassA.java" projPath="/com.example:module-a" hash="-1515583975"/>
+		<Loc locRef="4" projId="com.example:module-a" covId="-675044039" sym=".DemoA:-675044039" project="com.example:module-a" binHash="3006248228" resProjPath="src/main/java/DemoA.java" uri="file:/C:/Users/Mrwan/Desktop/multiple-modules-maven/multi-module-parent/module-a/src/main/java/DemoA.java" projPath="/com.example:module-a" hash="-1238599811"/>
+		<Loc locRef="5" projId="com.example:module-b" covId="812184110" sym=".DemoB:812184110" project="com.example:module-b" binHash="1183646807" resProjPath="src/main/java/DemoB.java" uri="file:/C:/Users/Mrwan/Desktop/multiple-modules-maven/multi-module-parent/module-b/src/main/java/DemoB.java" projPath="/com.example:module-b" hash="-129784612"/>
+	</Locations>
+	<Tests>
+		<Test testRef="1" id="DemoATest|+|com.example:module-a#DemoATest.java#DemoATest#testAdd"/>
+		<Test testRef="2" id="DemoBTest|+|com.example:module-b#DemoBTest.java#DemoBTest#testAdd"/>
+		<Test testRef="3" id="com.example.AppATest|+|com.example:module-a#AppATest.java#com.example.AppATest#testAppA"/>
+		<Test testRef="4" id="com.example.AppBTest|+|com.example:module-b#AppBTest.java#com.example.AppBTest#testAppB"/>
+		<Test testRef="5" id="com.example.ClassATest|+|com.example:module-a#ClassATest.java#com.example.ClassATest#testMinus"/>
+	</Tests>
+	<CoverageData type="LC">
+		<CvgData locRef="1">
+			<Stats>
+				<Item itemRef="1" id="AppA.java#AppA" name="AppA">
+					<Item itemRef="2" id="AppA.java#AppA#&lt;init>#()V" name="AppA()" hash="-1825323357"/>
+					<Item itemRef="3" id="AppA.java#AppA#main#([Ljava/lang/String;)V" name="main( java.lang.String[] )" hash="1995189441"/>
+				</Item>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="2" elems="3" hashes="1723197983"/>
+				<StatCvg itemRef="3" elems="7 8" hashes="-1390516089 30537853"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="3">
+					<CtxCvg testRefs="3" elemRefs="7 8"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="2">
+			<Stats>
+				<Item itemRef="1" id="AppB.java#AppB" name="AppB">
+					<Item itemRef="2" id="AppB.java#AppB#main#([Ljava/lang/String;)V" name="main( java.lang.String[] )" hash="1995219232"/>
+					<Item itemRef="3" id="AppB.java#AppB#&lt;init>#()V" name="AppB()" hash="-1825322396"/>
+				</Item>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="2" elems="7 8" hashes="-1390516089 30537853"/>
+				<StatCvg itemRef="3" elems="3" hashes="1723197984"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="2">
+					<CtxCvg testRefs="4" elemRefs="7 8"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="3">
+			<Stats>
+				<Item itemRef="1" id="ClassA.java#ClassA" name="ClassA">
+					<Item itemRef="2" id="ClassA.java#ClassA#&lt;init>#()V" name="ClassA()" hash="2058066988"/>
+					<Item itemRef="3" id="ClassA.java#ClassA#multiply#(II)I" name="multiply( int, int )" hash="-2107720672"/>
+					<Item itemRef="4" id="ClassA.java#ClassA#minus#(II)I" name="minus( int, int )" hash="2139772977"/>
+				</Item>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="2" elems="3" hashes="-856927165"/>
+				<StatCvg itemRef="3" elems="9" hashes="-679508706"/>
+				<StatCvg itemRef="4" elems="5" hashes="-679419333"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="4">
+					<CtxCvg testRefs="5" elemRefs="5"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="4">
+			<Stats>
+				<Item itemRef="1" id="DemoA.java#DemoA" name="DemoA">
+					<Item itemRef="2" id="DemoA.java#DemoA#add#(II)I" name="add( int, int )" hash="-1285078613"/>
+					<Item itemRef="3" id="DemoA.java#DemoA#&lt;init>#()V" name="DemoA()" hash="1595689571"/>
+				</Item>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="2" elems="3" hashes="-679478915"/>
+				<StatCvg itemRef="3" elems="1" hashes="393276250"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="2">
+					<CtxCvg testRefs="1" elemRefs="3"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="5">
+			<Stats>
+				<Item itemRef="1" id="DemoB.java#DemoB" name="DemoB">
+					<Item itemRef="2" id="DemoB.java#DemoB#&lt;init>#()V" name="DemoB()" hash="1595690532"/>
+					<Item itemRef="3" id="DemoB.java#DemoB#add#(II)I" name="add( int, int )" hash="-1285048822"/>
+				</Item>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="2" elems="1" hashes="393277211"/>
+				<StatCvg itemRef="3" elems="3" hashes="-679478915"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="3">
+					<CtxCvg testRefs="2" elemRefs="3"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+	</CoverageData>
+</Coverage>
