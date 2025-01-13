@@ -19,7 +19,7 @@
           uses: actions/checkout@v4
 
         - name: Generate table
-          uses: parasoft/parasoft-coverage-action@roller_cicd960
+          uses: parasoft/parasoft-coverage-action@roller_test
           # uses: jchen-parasoft/coverage-report-action@new_implement_demo
           with: 
             report: 'coverage*'
